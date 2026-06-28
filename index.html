@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CannabisUY - Soporte y Comunidad</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121814;
+            color: #e4ebe6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 500px;
+            background-color: #1a231e;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            text-align: center;
+            border: 1px solid #2d3d34;
+        }
+        h1 { color: #52c48a; margin-bottom: 10px; font-size: 28px; }
+        p { line-height: 1.6; color: #b8c7be; font-size: 16px; }
+        .heart { color: #ff6b6b; font-size: 22px; }
+        
+        /* Contenedor de la grilla de donaciones */
+        .grid-donaciones {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        /* Tarjetas de donación individuales */
+        .tarjeta-donar {
+            background-color: #233028;
+            border: 1px solid #384d40;
+            border-radius: 12px;
+            padding: 20px 10px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .tarjeta-donar:hover {
+            background-color: #2ea44f;
+            border-color: #52c48a;
+            transform: translateY(-2px);
+        }
+        
+        .monto {
+            font-size: 22px;
+            font-weight: bold;
+            color: #e4ebe6;
+            margin-bottom: 5px;
+        }
+        
+        .tarjeta-donar:hover .monto {
+            color: white;
+        }
+        
+        .btn-texto {
+            font-size: 13px;
+            color: #a3b8ac;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .tarjeta-donar:hover .btn-texto {
+            color: #e4ebe6;
+        }
+
+        .footer { margin-top: 35px; font-size: 12px; color: #667c70; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Portal Verde UY</h1>
+    <p>¡Gracias por utilizar y confiar en Portal Verde! Pensado para dar acceso a una vía rápida y accesible</p>
+    
+    <p>Este es mi primer proyecto independiente, pensado para darles una solución visual, rápida y accesible a los usuarios que estén en búsqueda de sucursales habilitada por el Instituto de Regulación y Control del Cannabis (IRCCA) y Clubes Cannabicos habilitados en un marco totalmente legal y gratuito. El fin de la aplicación es meramente informativo.</p>
+    
+    <hr style="border: 0; border-top: 1px solid #2d3d34; margin: 20px 0;">
+    
+    <p><strong>¿Te pareció útil la app? <span class="heart">❤️</span></strong><br>
+    Con tu donación nos ayudas a seguir creciendo y manteniendo linda & activa la aplicación para todos.</p>
+    
+    <!-- GRILLA DE OPCIONES DE PAGO -->
+    <div class="grid-donaciones">
+        
+        <!-- Opción 1: $100 -->
+        <a href="https://mpago.la/1ubu7Y8" target="_blank" class="tarjeta-donar">
+            <span class="monto">$100</span>
+            <span class="btn-texto">Donar</span>
+        </a>
+
+        <!-- Opción 2: $200 -->
+        <a href="https://mpago.la/1N9dXQi" target="_blank" class="tarjeta-donar">
+            <span class="monto">$200</span>
+            <span class="btn-texto">Donar</span>
+        </a>
+
+        <!-- Opción 3: $500 -->
+        <a href="https://mpago.la/1td3aBy" target="_blank" class="tarjeta-donar">
+            <span class="monto">$500</span>
+            <span class="btn-texto">Donar</span>
+        </a>
+
+        <!-- Opción 4: $1000 -->
+        <a href="https://mpago.la/2UQbq2r" target="_blank" class="tarjeta-donar">
+            <span class="monto">$1000</span>
+            <span class="btn-texto">Donar</span>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        Desarrollado de forma independiente en Montevideo, Uruguay.<br>
+        Esta página cumple con los requisitos de soporte externo para Google Play.
+    </div>
+</div>
+
+</body>
+</html>
